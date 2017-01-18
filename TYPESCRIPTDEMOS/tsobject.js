@@ -29,9 +29,8 @@ obj.dispaly();
 var Manager = (function (_super) {
     __extends(Manager, _super);
     function Manager(a) {
-        var _this = _super.call(this, 101, 'super', 1500000) || this;
-        _this.allowances = a;
-        return _this;
+        _super.call(this, 101, 'super', 1500000);
+        this.allowances = a;
     }
     Manager.prototype.showAllowances = function () {
         console.log('showallaances', this.allowances);

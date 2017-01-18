@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Angular 2 </title>
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></lin
+    <title>Angular 2 </title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </link>
 </head>
+
 <body>
-<h1>Angular 2 </h1>
-<!-- Your template here -->
-<script src="node_modules/es6-shim/es6-shim.min.js"></script>
-<script src="node_modules/reflect-metadata/Reflect.js"></script>
-<script src="node_modules/systemjs/dist/system.src.js"></script>
-<script src="node_modules/zone.js/dist/zone.js"></script>
-<script src="systemjs.config.js"></script>
-<script>
-System.import('./app/loader')
-.then(null, console.error.bind(console));
-</script>
+    <h1>Angular 2 </h1>
+    <!-- Your template here -->
+    <simple-data></simple-data>
+    <hr>
+    <product-data></product-data>
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+            // Main.js contains bootstrapping  
+            System.import('./app/main')
+                .then(null, console.error.bind(console));
+        </script>
 </body>
+
 </html>

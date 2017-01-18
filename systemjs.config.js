@@ -5,7 +5,7 @@ var map = {
     "@angular/core": "node_modules/@angular/core",
     "@angular/forms": "node_modules/@angular/forms",
     "@angular/platform-browser": "node_modules/@angular/platform-browser",
-    "@angular/platform-browser-dynamic": "node_modules/@angular/platformbrowser-dynamic"
+    "@angular/platform-browser-dynamic": "node_modules/@angular/platform-browser-dynamic"
 };
 var packages = {
     "rxjs": { "defaultExtension": "js" },
@@ -19,8 +19,8 @@ var packages = {
     },
     "@angular/core": { "main": "bundles/core.umd.js", "defaultExtension": "js" },
     "@angular/forms": { "main": "bundles/forms.umd.js", "defaultExtension": "js" },
-    "@angular/platform-browser": { "main": "bundles/platformbrowser.umd.js", "defaultExtension": "js" },
-    "@angular/platform-browser-dynamic": { "main": "bundles/platformbrowser-dynamic.umd.js", "defaultExtension": "js" },
+    "@angular/platform-browser": { "main": "bundles/platform-browser.umd.js", "defaultExtension": "js" },
+    "@angular/platform-browser-dynamic": { "main": "bundles/platform-browser-dynamic.umd.js", "defaultExtension": "js" },
     "app": {
         format: 'register',
         defaultExtension: 'js'

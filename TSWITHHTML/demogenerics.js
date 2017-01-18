@@ -23,7 +23,6 @@ stkInt.push(40);
 stkInt.push(50);
 // let val = stkInt.pop();
 // console.log ('poped value' + val);
-// listdata is inbuilt function 
 var arrayData = stkInt.listdata();
 // for (let x of arrayData){
 //     console.log (x);

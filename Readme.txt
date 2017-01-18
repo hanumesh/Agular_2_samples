@@ -18,3 +18,33 @@ Angular Nomenclature
 <name>.pip.ts
 
 --------------------------------------------
+Angular 2 practically
+- Creating component
+    - class having decorator as @component
+        - @component has 
+            -Selector
+                - 
+            -Template
+                -Inline 
+            -TemplateUrl
+            -Styles
+            -StyeUrl
+            -Providers
+                -Array property used to define dependencies on component e.g Angular 2 service
+    -Must import @angular/core package having following classes
+        - component
+        - Oninit
+        - Input
+        - output
+
+------------------------------------------------
+Angular 2 Bootstrap
+
+Libraries:-
+    -core        
+    -platform-brower
+    -platformbrowserdynamics
+Ngmodule
+    -
+-----------------------------------------------------
+ng2-component
