@@ -1,0 +1,29 @@
+{
+  "name": "simple-typescript-app",
+  "version": "1.0.0",
+  "description": "The Application for understanding Typescript ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanumesh/Angular2.git"
+  },
+  "keywords": [
+    "hanu"
+  ],
+  "author": "hanumesh",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^1.20150623.0",
+    "typescript": "2.1.5"
+  },
+  "devDependencies": {
+    "typescript": "2.1.5"
+  },
+  "bugs": {
+    "url": "https://github.com/hanumesh/Angular2/issues"
+  },
+  "homepage": "https://github.com/hanumesh/Angular2#readme"
+}

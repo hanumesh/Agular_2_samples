@@ -1,0 +1,41 @@
+<html> 
+    <head>  
+        <script src="node_modules/jquery/dist/jquery.min.js">
+        </script>
+        <!--<script src ="app.js" >
+        </script>-->
+        <script src ="curd.js" >
+        </script>
+        <script type="text/javascript">
+         $(document).ready(function(){
+               var edal = new EmployeeDal1(); 
+               $("#btn").on('click',function(){
+                   var eno = $("#eno").val();
+                   var ename = $("#ename").val();
+                   edal.display(eno,ename);
+               }) ;
+          });
+        </script>
+        <body>
+            <table>
+                <tr>
+                    <td> Emp no </td>
+                    <td>
+                        <input type ="text" id ="eno">                                            
+                    </td>
+                </tr>
+                <tr>
+                     <td> Emp Salary </td>
+                    <td>
+                        <input type ="text" id ="ename">                        
+                    </td>
+                </tr>
+                <tr>                 
+                    <td>
+                        <input type ="button"  value ="submit" id ="btn">                        
+                    </td>
+                </tr>
+            </table>
+        </body>    
+    </head>
+</html>
