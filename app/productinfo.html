@@ -1,25 +1,41 @@
 <table class="table table-bordered table-striped">
     <tr>
+        <td><h1>{{Message}}</h1></td>
+    </tr>
+    <tr>
         <table class="table table-bordered table-striped">
             <tr>
                 <td>Product Id</td>
-                <td ><input type="text" class="form-control" /></td>
+                <td ><input type="text" class="form-control"   [(ngModel)]="product.ProductId" /></td>
             </tr>
             <tr>
                 <td >Product Name</td>
-                <td ><input type="text" class="form-control" /></td>
+                <td ><input type="text" class="form-control"   [(ngModel)]="product.ProductName" /></td>
             </tr>
             <tr>
                 <td>Price</td>
-                <td ><input type="text" class="form-control" /></td>
+                <td ><input type="text" class="form-control" [(ngModel)]="product.Price" /></td>
             </tr>
             <tr>
                 <td >Category</td>
-                <td ><input type="text" class="form-control" /></td>
+                <td >
+                     <select class="form-control" 
+                        [(ngModel)]="product.Category">
+                         <option  *ngFor="let c of categories">{{c}}</option>
+                     </select>
+                </td>
             </tr>
             <tr>
-                <td ><button class="btn btn-default">New</button></td>
-                <td ><button class="btn btn-success">Save</button></td>
+                <td>
+                      <input type="button" value="New" 
+                      class="btn btn-default" 
+                       (click)="clear()"/>
+                  </td>
+                  <td>
+                      <input type="button" value="Save"
+                       class="btn btn-success" 
+                       (click)="save()"/>
+                  </td>
             </tr>
         </table>
     </tr>
@@ -35,7 +51,12 @@
                     <th></th>
                 </thead>
                 <tbody>
-
+                         <tr *ngFor="let p of products">
+                         <td>{{p.ProductId}}</td>   
+                         <td>{{p.ProductName}}</td>   
+                         <td>{{p.Price}}</td>   
+                         <td>{{p.Category}}</td>   
+                    </tr>
                 </tbody>
             </tr>
         </table>

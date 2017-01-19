@@ -11,7 +11,7 @@ System.register(['@angular/core', './productinfo.model'], function(exports_1, co
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, productinfo_model_1;
-    var ProductInfoComponent;
+    var ProductInfoFormComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -21,30 +21,36 @@ System.register(['@angular/core', './productinfo.model'], function(exports_1, co
                 productinfo_model_1 = productinfo_model_1_1;
             }],
         execute: function() {
-            ProductInfoComponent = (function () {
-                function ProductInfoComponent() {
+            ProductInfoFormComponent = (function () {
+                function ProductInfoFormComponent() {
                     this.Message = "The prouct Information system";
                     this.product = new productinfo_model_1.ProductInfo(0, '', 0, '');
                     this.products = new Array();
                     this.categories = ['ECT', 'ETl', 'ETR', 'HR'];
+                    this.isSubmited = false;
                 }
-                ProductInfoComponent.prototype.save = function () {
+                ProductInfoFormComponent.prototype.save = function () {
                     this.products.push(this.product);
+                    this.isSubmited = true;
                 };
-                ProductInfoComponent.prototype.clear = function () {
+                ProductInfoFormComponent.prototype.clear = function () {
                     this.product = new productinfo_model_1.ProductInfo(0, '', 0, '');
                 };
-                ProductInfoComponent.prototype.ngOnInit = function () { };
-                ProductInfoComponent = __decorate([
+                ProductInfoFormComponent.prototype.loadForm = function () {
+                    this.product = new productinfo_model_1.ProductInfo(0, '', 0, '');
+                    this.isSubmited = false;
+                };
+                ProductInfoFormComponent.prototype.ngOnInit = function () { };
+                ProductInfoFormComponent = __decorate([
                     core_1.Component({
-                        selector: 'product-data',
-                        templateUrl: './app/productinfo.html'
+                        selector: 'product-form',
+                        templateUrl: './app/productinfoform.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], ProductInfoComponent);
-                return ProductInfoComponent;
+                ], ProductInfoFormComponent);
+                return ProductInfoFormComponent;
             }());
-            exports_1("ProductInfoComponent", ProductInfoComponent);
+            exports_1("ProductInfoFormComponent", ProductInfoFormComponent);
         }
     }
 });

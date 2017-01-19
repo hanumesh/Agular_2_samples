@@ -47,4 +47,9 @@ Libraries:-
 Ngmodule
     -
 -----------------------------------------------------
-ng2-component
+ng2-component 
+
+------------------------------------------------------
+Angular2  databinding features
+- interplotaion  {{Transform- A mechanism of one-way binding}}
+    

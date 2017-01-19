@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser-dynamic', '@angular/platform-browser', './simple.component', './productinfo.component'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/forms', '@angular/platform-browser-dynamic', '@angular/platform-browser', './simple.component', './productinfo.component', './productinfo.form.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,12 +10,15 @@ System.register(['@angular/core', '@angular/platform-browser-dynamic', '@angular
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_dynamic_1, platform_browser_1, simple_component_1, productinfo_component_1;
+    var core_1, forms_1, platform_browser_dynamic_1, platform_browser_1, simple_component_1, productinfo_component_1, productinfo_form_component_1;
     var NameModule;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (forms_1_1) {
+                forms_1 = forms_1_1;
             },
             function (platform_browser_dynamic_1_1) {
                 platform_browser_dynamic_1 = platform_browser_dynamic_1_1;
@@ -28,6 +31,9 @@ System.register(['@angular/core', '@angular/platform-browser-dynamic', '@angular
             },
             function (productinfo_component_1_1) {
                 productinfo_component_1 = productinfo_component_1_1;
+            },
+            function (productinfo_form_component_1_1) {
+                productinfo_form_component_1 = productinfo_form_component_1_1;
             }],
         execute: function() {
             // Registration of imported classs in bootstrap
@@ -36,10 +42,10 @@ System.register(['@angular/core', '@angular/platform-browser-dynamic', '@angular
                 }
                 NameModule = __decorate([
                     core_1.NgModule({
-                        imports: [platform_browser_1.BrowserModule],
+                        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
                         exports: [],
-                        declarations: [simple_component_1.SimpleComponent, productinfo_component_1.ProductInfoComponent],
-                        bootstrap: [simple_component_1.SimpleComponent, productinfo_component_1.ProductInfoComponent]
+                        declarations: [simple_component_1.SimpleComponent, productinfo_component_1.ProductInfoComponent, productinfo_form_component_1.ProductInfoFormComponent],
+                        bootstrap: [productinfo_form_component_1.ProductInfoFormComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], NameModule);

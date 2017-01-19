@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({              
+@Component({
     //   moduleId: module.id,
     //   selector: 'selector',
     selector: 'simple-data',
